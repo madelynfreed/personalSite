@@ -10,6 +10,7 @@ body {
 	z-index: 149;
 }
 
+/*---------------------BIG FACE HOVER-------------------------*/
 .touching {
 	height: 320px;
 	width: 340px;
@@ -20,8 +21,6 @@ body {
 	z-index: 101;
 	display: block;
 }
-
-
 
 .touching:hover ~ .circle {
 	opacity: .9;
@@ -81,10 +80,6 @@ body {
 	width: 300px;
 	position: fixed;
 	padding: 20px 0 0 20px;
-}
-
-.face:hover ~ .name{
-	color: #4D4D4D;
 }
 
 
