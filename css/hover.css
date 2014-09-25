@@ -1,0 +1,31 @@
+
+.bubble {
+  position: relative;
+}
+.container {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  float: left;
+
+}
+
+.content {
+  background-color: gray;
+  height: 75px;
+  width: 0px;
+  position: absolute;
+  left: 32px; 
+  z-index: -1;
+  text-align: right;
+  line-height: 75px;
+  font-family: 'League Gothic';
+  color: white;
+  opacity: 0;
+  transition: width 0.6s, opacity 0.6s;
+}
+
+.container:hover + .content {
+  opacity: 100;
+  width: 150px;
+}

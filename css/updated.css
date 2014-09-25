@@ -1,0 +1,142 @@
+body {
+	margin: 0 0 0 0;
+}
+
+.transform {
+	height: 340px;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	z-index: 149;
+}
+
+.touching {
+	height: 320px;
+	width: 340px;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 101;
+	display: block;
+}
+
+
+
+.touching:hover ~ .circle {
+	opacity: .9;
+}
+.touching:hover ~ .innerCircle{
+
+	opacity: 1;
+	height: 210px;
+	width: 210px;
+	top: 75px;
+	left: 55px;
+}
+
+.touching:hover ~ #birdReaper {
+	top: 105px;
+	left: 85px;
+	opacity: 1;
+}
+.circle {
+	height: 320px;
+	width: 310px;
+	background-color: white;
+	opacity: 0;
+	position: absolute;
+	z-index: 98;
+	transition: opacity 1s;
+}
+
+
+.innerCircle {
+	border: 2px solid;
+	border-color: black;
+	height: 276px;
+	width: 276px;
+	border-radius: 50%;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 99; 
+	opacity: 0;
+	transition: opacity .2s, height .3s, width .3s, top .3s, left .3s;
+}
+
+#birdReaper {
+	opacity: 0;
+	position: absolute;
+	top:158px;
+	left: 300px;
+	transition: opacity .2s, top .6s, left .6s;
+	z-index: 100;
+	height: 150px;
+	width: 150px;
+}
+
+.largeImage {
+	height: 300px;
+	width: 300px;
+	position: fixed;
+	padding: 20px 0 0 20px;
+}
+
+.face:hover ~ .name{
+	color: #4D4D4D;
+}
+
+
+.name {
+	position: fixed;
+	left: 310px;
+	font-size: 600%;
+	font-family: 'Lobster';
+	top: 100px;
+	/*color: #717171;*/
+	transition: color .6s;
+}
+
+#padding {
+	height: 290px;
+	width: 100%;
+}
+
+.menu {
+	width: 100%;
+	min-height: 20px;
+	overflow: hidden;
+	position: relative;
+	border-bottom: 1px solid;
+	border-color: #D3D3D3;
+	z-index: 150;
+}
+
+.menu.stuck {
+	position: fixed;
+	top:0;
+	float: left;
+	z-index: 150;
+}
+
+.menu > div {
+	float: right;
+	padding: 5px 15px 5px 15px;
+	font-size: 200%;
+	font-family: 'Lobster';
+}
+
+.menu > div:hover{
+	background-color: #eaeaea;
+}
+#buffer {
+	height: 340px;
+	width: 100%;
+	background-color: black;
+}
+.drawing {
+	height: 200px;
+	border: 1px solid;
+	width: 100%;
+}
